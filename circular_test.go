@@ -6,6 +6,16 @@ import (
 	"github.com/devlights/linkedlist"
 )
 
+func ExampleNewCircular() {
+	var (
+		circular = linkedlist.NewCircular[int](3)
+	)
+	fmt.Println(circular)
+
+	// Output:
+	// []
+}
+
 func ExampleCircular_Add() {
 	var (
 		circular = linkedlist.NewCircular[string](5)
